@@ -636,3 +636,281 @@
     End Css
 =============================================
 ***/
+
+/*** 
+=============================================
+    Contact Info Style2 Css
+=============================================
+***/
+.contact-info-style2 {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    padding: 100px 0 70px;
+    z-index: 1;
+}
+
+.single-contact-info-style2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    height: 100%; /* Make all cards same height */
+    min-height: 280px; /* Minimum height for consistency */
+}
+
+.single-contact-info-style2:hover {
+    transform: translateY(-10px);
+}
+
+.single-contact-info-style2 .icon-holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: rgba(var(--thm-base-rgb), 0.1);
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.single-contact-info-style2 .icon-holder i {
+    font-size: 40px;
+    color: var(--thm-base);
+}
+
+.single-contact-info-style2 .text-holder {
+    position: relative;
+    display: block;
+    flex-grow: 1; /* Allow text area to grow */
+    width: 100%;
+}
+
+.single-contact-info-style2 .text-holder h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.single-contact-info-style2 .text-holder p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.single-contact-info-style2 .text-holder .contact-link {
+    color: var(--thm-gray);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.single-contact-info-style2 .text-holder .contact-link:hover {
+    color: var(--thm-base);
+}
+
+.single-contact-info-style2 .border-box {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: var(--thm-base);
+    margin: 20px auto 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 991px) {
+    .contact-info-style2 {
+        padding: 70px 0 40px;
+    }
+    
+    .single-contact-info-style2 {
+        padding: 40px 20px;
+        min-height: 250px;
+    }
+    
+    .single-contact-info-style2 .icon-holder {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .single-contact-info-style2 .icon-holder i {
+        font-size: 32px;
+    }
+    
+    .single-contact-info-style2 .text-holder h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-info-style2 {
+        padding: 50px 0 20px;
+    }
+    
+    .single-contact-info-style2 {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-form-box {
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-info-box {
+    background: #f8f8f8;
+    padding: 50px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.contact-info-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.contact-info-list .icon {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.contact-info-list .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus {
+    border-color: var(--thm-base);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    background: #128C7E;
+}
+
+/*** 
+=============================================
+    Google Map Section Css
+=============================================
+***/
+.google-map {
+    position: relative;
+    display: block;
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.google-map .title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--thm-black);
+}
+
+.google-map .title p {
+    font-size: 18px;
+    color: var(--thm-gray);
+}
+
+.google-map-box {
+    position: relative;
+    display: block;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.google-map-box iframe {
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.google-map-box:hover iframe {
+    filter: grayscale(0);
+}
+
+.map-location-info {
+    position: relative;
+    display: block;
+}
+
+.map-location-info p {
+    font-size: 16px;
+    color: var(--thm-gray);
+}
+
+.map-location-info i {
+    color: var(--thm-base);
+}
+
+/* Make map responsive on mobile */
+@media (max-width: 767px) {
+    .google-map {
+        padding: 50px 0;
+    }
+    
+    .google-map .title h2 {
+        font-size: 28px;
+    }
+    
+    .google-map .title p {
+        font-size: 16px;
+    }
+    
+    .google-map-box iframe {
+        height: 300px;
+    }
+}
